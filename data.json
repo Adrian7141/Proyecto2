@@ -1,0 +1,109 @@
+{
+    "temas": [
+        {
+            "id": 1,
+            "titulo": "Web APIs",
+            "descripcion": "Interfaces de programación de aplicaciones que permiten la comunicación entre diferentes sistemas de software.",
+            "imagen": "img/webapi.jpg",
+            "detalles": {
+                "definicion": "Las Web APIs son interfaces que permiten que diferentes sistemas de software se comuniquen entre sí a través de la web utilizando protocolos estándar como HTTP y formatos de datos como JSON.",
+                "ejemplos": [
+                    "APIs de redes sociales (Twitter, Facebook)",
+                    "APIs de pago (PayPal, Stripe)",
+                    "APIs de mapas (Google Maps)"
+                ],
+                "frameworks": [
+                    {
+                        "nombre": "Node.js",
+                        "descripcion": "Con Express.js o Fastify"
+                    },
+                    {
+                        "nombre": "Python",
+                        "descripcion": "Con Flask o Django REST framework"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "titulo": "Microservicios",
+            "descripcion": "Arquitectura de software que estructura una aplicación como una colección de servicios débilmente acoplados.",
+            "imagen": "img/microservicios.jpg",
+            "detalles": {
+                "definicion": "La arquitectura de microservicios es un enfoque para desarrollar una aplicación de software como un conjunto de pequeños servicios, cada uno ejecutándose en su propio proceso y comunicándose con mecanismos ligeros.",
+                "ventajas": [
+                    "Escalabilidad independiente",
+                    "Despliegue independiente",
+                    "Tecnología heterogénea",
+                    "Resiliencia mejorada"
+                ],
+                "herramientas": [
+                    {
+                        "nombre": "Spring Boot",
+                        "descripcion": "Para Java"
+                    },
+                    {
+                        "nombre": "Kubernetes",
+                        "descripcion": "Orquestación"
+                    },
+                    {
+                        "nombre": "Docker",
+                        "descripcion": "Contenedores"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "titulo": "Contenedores",
+            "descripcion": "Tecnología de virtualización a nivel de sistema operativo para implementar y ejecutar aplicaciones distribuidas.",
+            "imagen": "img/contenedores.jpg",
+            "detalles": {
+                "definicion": "Los contenedores son una forma de virtualización a nivel de sistema operativo que permite empaquetar una aplicación con todas sus dependencias en una unidad estandarizada para el desarrollo y despliegue de software.",
+                "ventajas": [
+                    "Consistencia entre entornos",
+                    "Aislamiento de aplicaciones",
+                    "Eficiencia de recursos",
+                    "Portabilidad"
+                ],
+                "comandos": [
+                    "docker build -t myapp .",
+                    "docker run -p 4000:80 myapp",
+                    "docker ps",
+                    "docker stop container_id"
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "titulo": "Desarrollo para la nube",
+            "descripcion": "Creación de aplicaciones diseñadas específicamente para entornos de computación en la nube.",
+            "imagen": "img/nube.jpg",
+            "detalles": {
+                "definicion": "El desarrollo para la nube implica crear aplicaciones que aprovechan las ventajas de la computación en la nube, como escalabilidad elástica, alta disponibilidad y distribución geográfica.",
+                "plataformas": [
+                    "Amazon Web Services (AWS)",
+                    "Microsoft Azure",
+                    "Google Cloud Platform (GCP)"
+                ],
+                "patrones": [
+                    "Serverless (Funciones como Servicio)",
+                    "Escalado automático",
+                    "Almacenamiento distribuido"
+                ]
+            }
+        }
+    ],
+    "enlaces": {
+        "github": "https://github.com/tu-usuario/proyecto-web",
+        "hosting": "https://tusitio.com"
+    },
+    "informacion": {
+        "materia": "DESARROLLO WEB",
+        "profesor": "Dr. en C. Margarita Mondragón Arellano",
+        "tema": "Unidad II",
+        "fecha": "7-abril-2025",
+        "carrera": "Licenciatura en Informática y Tecnologías Computacionales",
+        "semestre": "6o / A"
+    }
+}

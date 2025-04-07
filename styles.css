@@ -1,0 +1,134 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar personalizada */
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #00d4ff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ffaa !important;
+}
+
+/* Hero section */
+.carousel {
+    margin-bottom: 2rem;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    bottom: 25%;
+    color: #ffffff;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #00ffe7;
+}
+
+/* Cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #00fff2;
+}
+
+.card-text {
+    color: #ffffff;
+}
+
+/* Formulario */
+#contactForm {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    margin-top: 3rem;
+    color: #cccccc;
+    text-align: center;
+}
+
+footer a {
+    color: #00ffe1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Modales */
+.modal-content {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 0.5rem;
+}
+
+.modal-title {
+    font-weight: 700;
+    color: #00fff2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}

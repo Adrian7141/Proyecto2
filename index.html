@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Web Modernas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tecnologías Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#temas">Temas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="inicio" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Tecnologías Web Modernas</h1>
+                    <p>Explora las últimas tendencias en desarrollo web</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Temas -->
+    <section id="temas" class="container my-5">
+        <h2 class="text-center mb-5">Temas Principales</h2>
+        
+        <div class="row">
+            <!-- Web APIs -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/api.png" class="card-img-top" alt="Web APIs">
+                    <div class="card-body">
+                        <h5 class="card-title">Web APIs</h5>
+                        <p class="card-text">Interfaces de programación de aplicaciones que permiten la comunicación entre diferentes sistemas de software.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#apiModal">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Microservicios -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/micro.png" class="card-img-top" alt="Microservicios">
+                    <div class="card-body">
+                        <h5 class="card-title">Microservicios</h5>
+                        <p class="card-text">Arquitectura de software que estructura una aplicación como una colección de servicios débilmente acoplados.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#microModal">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contenedores -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/contenedores.png" class="card-img-top" alt="Contenedores">
+                    <div class="card-body">
+                        <h5 class="card-title">Contenedores</h5>
+                        <p class="card-text">Tecnología de virtualización a nivel de sistema operativo para implementar y ejecutar aplicaciones distribuidas.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#containerModal">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Apps en la Nube -->
+<div class="col-md-4 mb-4">
+    <div class="card h-100">
+        <img src="img/nube.png" class="card-img-top" alt="Desarrollo en la Nube" loading="lazy">
+        <div class="card-body">
+            <h5 class="card-title">Apps en la Nube</h5>
+            <p class="card-text">Desarrollo de aplicaciones directamente para entornos cloud, aprovechando escalabilidad y disponibilidad global.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cloudModal">
+                <i class="fas fa-cloud me-1"></i> Más información
+            </button>
+        </div>
+    </div>
+</div>
+
+        
+        <!-- Video explicativo -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="text-center mb-4">Video Explicativo</h3>
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b0dJvhLymzw?si=h6F8LcUVO82KifFr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresa tu nombre.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresa un email válido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor ingresa un mensaje.
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter">
+                        <label class="form-check-label" for="newsletter">Suscribirme al newsletter</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://github.com/tu-usuario/proyecto-web" class="text-white">GitHub</a></li>
+                        <li><a href="https://tusitio.com" class="text-white">Sitio Web Hosteado</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2025 Licenciatura en Informática y Tecnologías Computacionales</p>
+                    <p>6° Semestre - Grupo A</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales -->
+    <!-- Modal Web APIs -->
+    <div class="modal fade" id="apiModal" tabindex="-1" aria-labelledby="apiModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="apiModalLabel">Web APIs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Las Web APIs son interfaces de programación de aplicaciones que permiten la comunicación entre diferentes sistemas de software a través de la web. Utilizan protocolos estándar como HTTP y formatos de datos como JSON.</p>
+                    <p>Algunos ejemplos comunes incluyen:</p>
+                    <ul>
+                        <li>APIs de redes sociales (Twitter, Facebook)</li>
+                        <li>APIs de pago (PayPal, Stripe)</li>
+                        <li>APIs de mapas (Google Maps)</li>
+                    </ul>
+                    <img src="img/api.png" class="img-fluid mb-3" alt="Web API Diagram">
+                    <p>Para desarrollar una Web API, se pueden utilizar frameworks como:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h6 class="card-title">Node.js</h6>
+                                    <p class="card-text">Con Express.js o Fastify</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h6 class="card-title">Python</h6>
+                                    <p class="card-text">Con Flask o Django REST framework</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Microservicios -->
+    <div class="modal fade" id="microModal" tabindex="-1" aria-labelledby="microModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="microModalLabel">Arquitectura de Microservicios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>La arquitectura de microservicios es un enfoque para desarrollar una aplicación de software como un conjunto de pequeños servicios, cada uno ejecutándose en su propio proceso y comunicándose con mecanismos ligeros.</p>
+                    <p>Ventajas:</p>
+                    <ul>
+                        <li>Escalabilidad independiente</li>
+                        <li>Despliegue independiente</li>
+                        <li>Tecnología heterogénea</li>
+                        <li>Resiliencia mejorada</li>
+                    </ul>
+                    <img src="img/micro.png" class="img-fluid mb-3" alt="Microservicios Diagram">
+                    <p>Herramientas comunes para microservicios:</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h6 class="card-title">Spring Boot</h6>
+                                    <p class="card-text">Para Java</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h6 class="card-title">Kubernetes</h6>
+                                    <p class="card-text">Orquestación</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h6 class="card-title">Docker</h6>
+                                    <p class="card-text">Contenedores</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Contenedores -->
+    <div class="modal fade" id="containerModal" tabindex="-1" aria-labelledby="containerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="containerModalLabel">Manejo de Contenedores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Los contenedores son una forma de virtualización a nivel de sistema operativo que permite empaquetar una aplicación con todas sus dependencias en una unidad estandarizada para el desarrollo y despliegue de software.</p>
+                    <p>Docker es la plataforma más popular para el manejo de contenedores:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Ventajas de Docker:</h6>
+                            <ul>
+                                <li>Consistencia entre entornos</li>
+                                <li>Aislamiento de aplicaciones</li>
+                                <li>Eficiencia de recursos</li>
+                                <li>Portabilidad</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/contenedores.png" class="img-fluid" alt="Docker Containers">
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h6>Comandos básicos de Docker:</h6>
+                        <pre><code>docker build -t myapp .
+docker run -p 4000:80 myapp
+docker ps
+docker stop container_id</code></pre>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Apps en la Nube -->
+<div class="modal fade" id="cloudModal" tabindex="-1" aria-labelledby="cloudModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cloudModalLabel">Desarrollo de Aplicaciones en la Nube</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p>El desarrollo de apps en la nube implica crear software diseñado para ejecutarse, escalarse y mantenerse en entornos cloud.</p>
+                <p>Beneficios clave:</p>
+                <ul>
+                    <li>Escalabilidad automática</li>
+                    <li>Alta disponibilidad</li>
+                    <li>Despliegue continuo (CI/CD)</li>
+                    <li>Integración con servicios gestionados (bases de datos, almacenamiento, IA, etc.)</li>
+                </ul>
+                <p>Plataformas populares:</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h6 class="card-title">Amazon Web Services (AWS)</h6>
+                                <p class="card-text">Amplio catálogo de servicios cloud.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h6 class="card-title">Google Cloud Platform (GCP)</h6>
+                                <p class="card-text">IA, Big Data y Kubernetes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h6 class="card-title">Microsoft Azure</h6>
+                                <p class="card-text">Integración con herramientas de Microsoft.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/nube.png" class="img-fluid mt-3" alt="Desarrollo en la Nube" loading="lazy">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
