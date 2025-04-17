@@ -116,6 +116,10 @@
                 <div class="ratio ratio-16x9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/b0dJvhLymzw?si=h6F8LcUVO82KifFr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
             </div>
+            <h3 class="text-center mb-4">Video Explicativo Api </h3>
+            <div class="ratio ratio-16x9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u2Ms34GE14U?si=jWd6C_N4yi7ldgi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         </div>
     </section>
 
@@ -211,6 +215,21 @@
                                 </div>
                             </div>
                         </div>
+                        <p>Las Web APIs pueden clasificarse según su nivel de acceso y uso:</p>
+<ul>
+    <li><strong>APIs abiertas (públicas):</strong> Disponibles para cualquier desarrollador. Permiten la integración con servicios ampliamente utilizados, como el clima o noticias.</li>
+    <li><strong>APIs asociadas:</strong> Requieren registro y autenticación. Son utilizadas entre socios estratégicos o integradores.</li>
+    <li><strong>APIs internas:</strong> Usadas dentro de una organización para mejorar la interoperabilidad entre sistemas internos.</li>
+</ul>
+<p>Una API no solo define cómo interactuar con una aplicación, también documenta cómo deben estructurarse las solicitudes (requests) y qué se espera como respuesta (response). Por ejemplo, una petición RESTful común utiliza métodos HTTP como GET, POST, PUT o DELETE para manipular recursos específicos representados en formato JSON.</p>
+<p>Las arquitecturas más utilizadas en Web APIs son:</p>
+<ul>
+    <li><strong>REST (Representational State Transfer):</strong> Arquitectura ligera basada en recursos, muy común por su simplicidad y escalabilidad.</li>
+    <li><strong>SOAP (Simple Object Access Protocol):</strong> Protocolo más estricto basado en XML, usado en aplicaciones empresariales complejas.</li>
+    <li><strong>GraphQL:</strong> Alternativa moderna desarrollada por Facebook que permite consultar múltiples recursos en una sola solicitud.</li>
+</ul>
+<p>El desarrollo de Web APIs también debe considerar aspectos como la autenticación (OAuth 2.0, API Keys), control de versiones (v1, v2, etc.), y documentación (Swagger, Postman). Esto garantiza una comunicación clara y segura entre los sistemas, fomentando la reutilización y escalabilidad de los servicios.</p>
+
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -265,6 +284,20 @@
                             </div>
                         </div>
                     </div>
+                    <p>Los microservicios son una arquitectura que descompone una aplicación en componentes pequeños, independientes y desplegables por separado. Cada microservicio se enfoca en una funcionalidad específica y se comunica con otros mediante APIs REST, eventos o agentes de mensajes.</p>
+<ul>
+    <li><strong>Autonomía tecnológica:</strong> Cada microservicio puede tener su propia base de datos y modelo de gestión de datos, permitiendo el uso de diferentes tecnologías según las necesidades.</li>
+    <li><strong>Despliegue independiente:</strong> Los servicios pueden ser actualizados o escalados sin afectar al resto de la aplicación, lo que mejora la agilidad y reduce riesgos.</li>
+    <li><strong>Organización por capacidades:</strong> Los microservicios se estructuran en torno a capacidades empresariales, facilitando la alineación entre equipos de desarrollo y objetivos de negocio.</li>
+</ul>
+<p>Comparados con arquitecturas monolíticas, los microservicios ofrecen ventajas como:</p>
+<ul>
+    <li><strong>Facilidad de mantenimiento:</strong> Al estar desacoplados, es más sencillo localizar y corregir errores o implementar nuevas funcionalidades.</li>
+    <li><strong>Escalabilidad eficiente:</strong> Solo se escalan los servicios que lo requieren, optimizando recursos y costos.</li>
+    <li><strong>Flexibilidad en el desarrollo:</strong> Los equipos pueden utilizar diferentes lenguajes y tecnologías según convenga a cada servicio.</li>
+</ul>
+<p>Esta arquitectura también se distingue de la SOA (Arquitectura Orientada a Servicios) en que los microservicios son más específicos de aplicaciones individuales y no dependen de un bus de servicios empresarial, lo que simplifica su implementación y gestión.</p>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -305,6 +338,19 @@ docker run -p 4000:80 myapp
 docker ps
 docker stop container_id</code></pre>
                     </div>
+                    <p>Los contenedores son unidades de software que empaquetan código y todas sus dependencias, permitiendo que las aplicaciones se ejecuten de manera rápida y confiable entre diferentes entornos informáticos. Cada contenedor aísla la aplicación del sistema host y de otros contenedores.</p>
+<ul>
+    <li><strong>Aislamiento:</strong> Cada contenedor ejecuta procesos aislados del sistema operativo host y de otros contenedores, proporcionando un entorno seguro y consistente.</li>
+    <li><strong>Portabilidad:</strong> Las aplicaciones en contenedores pueden ejecutarse en cualquier entorno que soporte contenedores, ya sea en la nube, localmente o en entornos híbridos.</li>
+    <li><strong>Eficiencia:</strong> Los contenedores comparten el kernel del sistema operativo host, consumiendo menos recursos que máquinas virtuales tradicionales.</li>
+</ul>
+<p>Comparados con otras tecnologías de virtualización, los contenedores ofrecen ventajas como:</p>
+<ul>
+    <li><strong>Consistencia:</strong> Eliminan el problema de "funciona en mi máquina" al empaquetar todo lo necesario para ejecutar la aplicación, incluyendo bibliotecas y configuraciones.</li>
+    <li><strong>Rapidez:</strong> Los contenedores se inician en segundos, permitiendo un escalamiento rápido y una mayor agilidad en el desarrollo.</li>
+    <li><strong>Control de versiones:</strong> Las imágenes de contenedor permiten un versionamiento sencillo y la capacidad de hacer rollback cuando sea necesario.</li>
+</ul>
+<p>Esta tecnología también se distingue de las máquinas virtuales tradicionales en que los contenedores no requieren un sistema operativo completo para cada instancia, lo que los hace más ligeros y eficientes en el uso de recursos.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -312,6 +358,7 @@ docker stop container_id</code></pre>
             </div>
         </div>
     </div>
+    
     <!-- Modal Apps en la Nube -->
 <div class="modal fade" id="cloudModal" tabindex="-1" aria-labelledby="cloudModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -357,6 +404,19 @@ docker stop container_id</code></pre>
                     </div>
                 </div>
                 <img src="img/nube.png" class="img-fluid mt-3" alt="Desarrollo en la Nube" loading="lazy">
+                <p>El desarrollo de aplicaciones en la nube es un paradigma que permite crear, implementar y escalar software utilizando infraestructura y servicios en la nube. Estas aplicaciones aprovechan los recursos distribuidos y los servicios gestionados de proveedores cloud.</p>
+<ul>
+    <li><strong>Escalabilidad elástica:</strong> Las aplicaciones en la nube pueden escalar automáticamente según la demanda, optimizando el uso de recursos y costos.</li>
+    <li><strong>Alta disponibilidad:</strong> Se diseñan para ser resistentes a fallos, aprovechando la distribución geográfica de los data centers cloud.</li>
+    <li><strong>Modelo de pago por uso:</strong> Solo se pagan los recursos consumidos, eliminando la necesidad de grandes inversiones iniciales en hardware.</li>
+</ul>
+<p>Comparado con el desarrollo tradicional, las aplicaciones en la nube ofrecen ventajas como:</p>
+<ul>
+    <li><strong>Reducción de tiempo de mercado:</strong> Los servicios gestionados permiten enfocarse en la lógica de negocio en lugar de la infraestructura.</li>
+    <li><strong>Desarrollo colaborativo:</strong> Facilita el trabajo distribuido de equipos gracias al acceso ubicuo a los recursos.</li>
+    <li><strong>Integración continua:</strong> Los entornos cloud nativos soportan mejor las prácticas DevOps y despliegues automatizados.</li>
+</ul>
+<p>Este modelo se diferencia del desarrollo on-premise tradicional en que las aplicaciones cloud están diseñadas específicamente para aprovechar servicios distribuidos, almacenamiento escalable y computación bajo demanda.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -371,4 +431,4 @@ docker stop container_id</code></pre>
     <!-- Script personalizado -->
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
